@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Menu</title>
+    <title>select_teacher</title>
     <meta charset="UTF-8" />
     <link
         rel="stylesheet"
@@ -20,23 +20,17 @@
             </div>
         </header>
         <div>
-            <div class="alert alert-light" role="alert" id="menu_rect">
-                メニュー欄
-            </div>
             <div class="flex_container">
-                <div class="d-flex justify-content-around">          
-                    <button type="button" class="btn btn-light" id="play_yoga_button" onclick="location.href='./select_teacher'">
-                        ヨガ実践
-                    </button>
-                    <button type="button" class="btn btn-light" id="past_log_button" onclick="location.href='./score'">
-                        過去のログ
-                    </button>
+                <div class="d-flex justify-content-around">   
+                    <form action="/play_yoga"  method="POST">
+                        <input type="submit" class="btn btn-success" name="video" id="login_submit" value="動画A">
+                    </form>
                 </div>
             </div>
             <div>
-                <button type="button" class="btn btn-secondary" id="setup_button">
-                    各種設定
-                </button>
+                <form action="/play_yoga"  method="POST">
+                    <input type="submit" class="btn btn-success" name="video" id="login_submit" value="動画B">
+                </form>
             </div>
         </div>
 
