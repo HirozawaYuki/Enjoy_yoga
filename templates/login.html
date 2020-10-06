@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="css/yogin.css" /> -->
+    <link rel="stylesheet" href="./../static/css/styles.css" />
+    </head>
+
+    <body>
+        <div class="text-center mt-5 mb-5">
+            <h2>ログイン画面</h2>
+        </div>
+
+        <div class="form-group">
+            <form action="/menu" method="POST">
+                <label>ユーザー名：</label>
+                <input type="text" class="form-control" name="name" placeholder="ヨガ田ヨガ男">
+                <input type="submit" class="btn btn-success" value="ログイン" id="login_submit">
+            </form>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Score</title>
+        <meta charset="UTF-8" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+        <!-- <link rel="stylesheet" href="css/yogin.css" /> -->
+        <link rel="stylesheet" href="./../static/css/styles.css" />
+    </head>
+
+    <body>
+        <div>
+            <h2>{{name}}さんの点数</h2>
+        </div>
+        <div class="flex_container">
+            <div class="d-flex justify-content-around">
+                <div class="score_part">骨格および呼吸のスコア
+                    <div class="score_born">骨格スコア<br></div>
+                    <div class="score_breath">呼吸スコア<br>{{breath_score}}</div>
+                </div>
+                <div class="score_part" id="all_score">合計スコア
+                    <div class="score_final">総合スコア<br></div>
+                    <div class="score_pre">前回スコア<br></div>
+                    <div class="rank">RANK<br></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

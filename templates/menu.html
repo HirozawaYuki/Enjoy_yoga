@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Menu</title>
+    <meta charset="UTF-8" />
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="css/yogin.css" /> -->
+    <link rel="stylesheet" href="./../static/css/styles.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="Header">
+                <h2>ようこそ {{name}}さん</h2>
+            </div>
+        </header>
+        <div>
+            <div class="alert alert-light" role="alert" id="menu_rect">
+                メニュー欄
+            </div>
+            <div class="flex_container">
+                <div class="d-flex justify-content-around">          
+                    <button type="button" class="btn btn-light" id="play_yoga_button" onclick="location.href='./play_yoga'">
+                        ヨガ実践
+                    </button>
+                    <button type="button" class="btn btn-light" id="past_log_button" onclick="location.href='./score'">
+                        過去のログ
+                    </button>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-secondary" id="setup_button">
+                    各種設定
+                </button>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
