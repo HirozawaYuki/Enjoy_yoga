@@ -36,11 +36,12 @@ display: flex;
 
 #login_submit {
     width: 100px;
-    height: 20%;
-    font-size: 2em;
-    top: 30%;
-    left:20%;
+    height: 30%;
+    text-align: center;
+    top: 40%;
+    left:40%;
     color: black;
+    background-color: greenyellow;
 }
 
 #menu_rect {
@@ -99,6 +100,35 @@ display: flex;
     width: 80%;
     height: 60%;
     background-position: center;
+}
+
+#start {
+    width: 100px;
+    height: 300px;
+    font-size: 2em;
+    left: 5%;
+    top: 10%;
+    background-color: #7de5ec;
+    position: fixed;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+#camera {
+    width: 200px;
+    height: 300px;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+}
+
+#myVideo {
+    width: 50%;
+    height: 50%;
+    left: 5%;
+    top: 10%;
 }
 
 #video_incamera {
@@ -215,5 +245,33 @@ display: flex;
     top: 60%;
     color: 10%;
     color: black;   
+}
+
+#teacher_info {
+    width: 40%;
+    height: 20%;
+    top: 70%;
+    left: 5%;
+    background-color: #808080;
+    color: white;  
+}
+
+#home {
+    width: 20%;
+    height: 20%;
+    top: 70%;
+    left: 50%;
+    border-radius: 30%;
+    background-color: white;
+}
+
+#replay {
+    width: 20%;
+    height: 20%;
+    top: 70%;
+    left: 75%;
+    border-radius: 30%;
+    background-color: white;
+
 }
 
