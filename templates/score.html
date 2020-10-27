@@ -14,33 +14,42 @@
     </head>
 
     <body>
-        <div>
+        <div id="name_position">
             <h2>{{name}}さんの点数</h2>
         </div>
         <div class="flex_container">
             <div class="d-flex justify-content-around">
-                <div class="score_part">骨格および呼吸のスコア
-                    <div class="score_born">骨格スコア<br></div>
-                    <div class="score_breath">呼吸スコア<br>{{breath_score}}</div>
+                <div id="score_part">骨格および呼吸のスコア
+                    <div class="score_born">骨格スコア<br>{{born_score}}点</div>
+                    <div class="score_breath">呼吸スコア<br>{{breath_score}}点</div>
                 </div>
-                <div class="score_part" id="all_score">合計スコア
-                    <div class="score_final">総合スコア<br></div>
+                <div id="all_score">合計スコア
+                    <div class="score_final">総合スコア<br>{{all_score}}点</div>
                     <div class="score_pre">前回スコア<br></div>
-                    <div class="rank">RANK<br></div>
+                    <div class="rank">RANK<br>{{rank}}</div>
                 </div>
             </div>
         </div>
+        
         <div class="flex_container">
             <div class="d-flex justify-content-around">
+            <div class="form_conf">
+                
+            
                 <div class="alert alert-light" role="alert" id="teacher_info">
                     {{bloadcast_video}}
                 </div>
-                <form action="/menu" method="POST">
-                    <input type="submit" class="btn btn-light" value="Home" name="{{user_name}}" id="home" width="50px" height="50px">
-                </form>
-                <button type="button" class="btn btn-light" id="replay" onclick="location.href='./select_teacher'">
-                    Replay
-                </button>
+                <div>
+                    <form action="/menu" method="POST">
+                    <input type="submit" class="btn btn-light" value="Home" name="{{user_name}}" id="home">
+                    
+                    <button type="button" class="btn btn-light" id="replay" onclick="location.href='./select_teacher'">
+                        Replay
+                    </button>
+                    </form>
+                
+                </div>
+            </div>
             </div>
         </div>
     </body>
