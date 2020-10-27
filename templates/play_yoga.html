@@ -24,7 +24,7 @@
         <div>
             <h2>実行画面</h2>
         </div>
-    <div class="flex_container">
+        <div class="flex_container">
             <div class="d-flex justify-content-around">
                 <div id="myVideo"></div>
                 <video src="{{broadcast_video}}" autoplay poster="./../static/image/yoga_meisou_woman.png" id="video_record"></video>
@@ -32,12 +32,12 @@
         </div>
         <div class="flex_container">
             <div class="d-flex justify-content-around">
-                <button type="button" class="btn btn-light" id="end_button" onclick="location.href='./score'">
+                <button type="button" class="btn btn-light" id="replay_button" onclick="location.href='./score'">
                     終了
                 </button>
-                <button type="button" class="btn btn-light" id="replay_button">
-                    もう一度やり直す
-                </button>
+                {#<button type="button" class="btn btn-light" id="replay_button">#}
+                    {#もう一度やり直す#}
+                {#</button>#}
             </div>
         </div>
 
@@ -45,7 +45,7 @@
         <!-- <script type="text/javascript" src="./../static/js/script.js"></script> -->
         <!-- <script src="./../static/js/ml5.min.js"></script> -->
         <script src="./../static/js/p5.min.js"></script>
-        <script type="text/javascript" src="./../static/js/micro_sketch.js"></script>
+        <!-- <script type="text/javascript" src="./../static/js/record_sketch.js"></script> -->
         <script type="text/javascript" src="./../static/js/sketch.js">
 
         </script>

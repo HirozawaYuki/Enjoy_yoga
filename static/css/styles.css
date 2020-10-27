@@ -35,11 +35,13 @@ display: flex;
 }
 
 #login_submit {
-    width: 100px;
-    height: 30%;
+    position: absolute;
+    width: 40%;
+    height: 10%;
     text-align: center;
     top: 40%;
-    left:40%;
+    left:30%;
+    font-size: 2em;
     color: black;
     background-color: greenyellow;
 }
@@ -80,6 +82,27 @@ display: flex;
     position: fixed;
     border-radius: 15%;
     cursor: pointer;
+}
+
+.teacher_box {
+    position: relative;
+    width: 40%;
+    height: 30%;
+    left: 30%;
+    top: 10%;
+
+}
+
+#teacher_submit {
+    width: 100%;
+    height: 100%;
+    /* left: 35%; */
+    /* top: 10%; */
+    text-align: center;
+    /* top: 40%; */
+    /* left:40%; */
+    color: black;
+    background-color: greenyellow;
 }
 
 #setup_button {
@@ -125,6 +148,7 @@ img {
 }
 
 #myVideo {
+    position: absolute;
     width: 50%;
     height: 50%;
     left: 5%;
@@ -139,6 +163,7 @@ img {
 }
 
 #video_record {
+    position: absolute;
     width: 50%;
     height: 50%;
     right: 5%;
@@ -169,12 +194,21 @@ img {
     cursor: pointer;
 }
 
-.score_part {
-    position: relative;
+#name_position {
+    position: absolute;
+    width: 35%;
+    height: 10%;
+    top: 15%;
+    left: 5%;
+    text-align: center;
+}
+
+#score_part {
+    position: absolute;
     background-color: #808080;
     width: 40%;
-    height: 200px;
-    top: 40%;
+    height: 30%;
+    bottom: 40%;
     left: 5%;
     border-radius: 10%;
     text-align: center;
@@ -186,7 +220,7 @@ img {
     background-color: #fff4d9;
     font-size: 1em;
     width: 80%;
-    height: 20%;
+    height: 35%;
     left: 10%;
     top: 20%;
     color: black;
@@ -197,17 +231,21 @@ img {
     background-color: #fff4d9;
     font-size: 1em;
     width: 80%;
-    height: 20%;
+    height: 35%;
     left: 10%;
-    top: 60%;
+    bottom: 5%;
     color: black;
 }
 
 #all_score {
-    height: 400px;
-    top: 20%;
-    left: 5%;
+    position: absolute;
+    width: 45%;
+    height: 70%;
+    top: 10%;
+    right: 5%;
     background-color: #ffc0cb;
+    border-radius: 10%;
+    text-align: center;
     color: black;
 }
 
@@ -216,10 +254,9 @@ img {
     background-color: #fff4d9;
     font-size: 1em;
     width: 80%;
-    height: 15%;
+    height: 20%;
     left: 10%;
-    top: 20%;
-    color: 10%;
+    top: 10%;
     color: black;
 }
 
@@ -227,11 +264,10 @@ img {
     position: absolute;
     background-color: #fff4d9;
     font-size: 1em;
-    width: 50%;
-    height: 15%;
-    left: 40%;
-    top: 40%;
-    color: 10%; 
+    width: 60%;
+    height: 20%;
+    right: 10%;
+    top: 35%;
     color: black;   
 }
 
@@ -239,37 +275,56 @@ img {
     position: absolute;
     background-color: #fff4d9;
     font-size: 1.5em;
+    /* width: 40%; */
     width: 40%;
-    height: 30%;
-    left: 30%;
-    top: 60%;
-    color: 10%;
+    height: 35%;
+    right: 30%;
+    bottom: 5%;
+    /* color: 10%; */
     color: black;   
 }
 
+/* .form_conf {
+    text-align: center;
+} */
+
+.form_conf{
+    /* text-align: center; */
+    display: inline-block;
+    margin: 0 10px;
+    height: 30%;
+    width: 100%;
+}
+
 #teacher_info {
+    position: absolute;
     width: 40%;
-    height: 20%;
-    top: 70%;
+    height: 30%;
+    bottom: 5%;
     left: 5%;
     background-color: #808080;
     color: white;  
 }
 
 #home {
+    position: absolute;
     width: 20%;
-    height: 20%;
-    top: 70%;
-    left: 50%;
+    height: 10%;
+    /* display: inline-block; */
+    bottom: 7%;
+    /* left: 50%; */
+    right: 30%;
     border-radius: 30%;
     background-color: white;
 }
 
 #replay {
+    position: absolute;
     width: 20%;
-    height: 20%;
-    top: 70%;
-    left: 75%;
+    height: 10%;
+    right: 5%;
+    bottom: 7%;
+    display: inline-block;
     border-radius: 30%;
     background-color: white;
 
