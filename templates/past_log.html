@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>log</title>
+    <meta charset="UTF-8" />
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="css/yogin.css" /> -->
+    <link rel="stylesheet" href="./../static/css/styles.css" />
+    </head>
+
+    <body>
+        <div>
+            <h2>過去のスコア一覧</h2>
+        </div>
+        <table class="table table-bordered">
+            <thead class="table_head">
+            <tr>
+            <th>順位</th>
+            <th>名前</th>
+            <th>スコア</th>
+            <th>年月日</th>
+            </thead>
+            <tbody>
+            <tr>
+            <td class="table_rank">１位</td>
+            <td class="table_name">{{name_list[0]}} さん</td>
+            <td class="table_score">{{score_list[0]}}点</td>
+            <td class="table_time">{{year[0]}}年{{month[0]}}月{{date[0]}}日</td>
+            </tr>
+            <tr>
+            <td class="table_rank">２位</td>
+            <td class="table_name">{{name_list[1]}} さん</td>
+            <td class="table_score">{{score_list[1]}}点</td>
+            <td class="table_time">{{year[1]}}年{{month[1]}}月{{date[1]}}日</td>
+            </tr calss="table_rank">
+            <tr>
+            <td class="table_rank">３位</td>
+            <td class="table_name">{{name_list[2]}} さん</td>
+            <td class="table_score">{{score_list[2]}}点</td>
+            <td class="table_time">{{year[2]}}年{{month[2]}}月{{date[2]}}日</td>
+            </tr>
+            <tr>
+            <td class="table_rank">４位</td>
+            <td class="table_name">{{name_list[3]}} さん</td>
+            <td class="table_score">{{score_list[3]}}点</td>
+            <td class="table_time">{{year[3]}}年{{month[3]}}月{{date[3]}}日</td>
+            </tr>
+            <tr>
+            <td class="table_rank">５位</td>
+            <td class="table_name">{{name_list[4]}} さん</td>
+            <td class="table_score">{{score_list[4]}}点</td>
+            <td class="table_time">{{year[4]}}年{{month[4]}}月{{date[4]}}日</td>
+            </tr>
+            </tbody>
+        </table>
+        <form action="/menu"  method="POST">
+            <input type="submit" name="{{user_name}}" id="menu_submit" value="メニューへ">
+        </form>
+    </body>
+</html>

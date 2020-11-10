@@ -25,7 +25,7 @@
                 </div>
                 <div id="all_score">合計スコア
                     <div class="score_final">総合スコア<br>{{all_score}}点</div>
-                    <div class="score_pre">前回スコア<br></div>
+                    <div class="score_pre">前回スコア<br>{{last_all_score}}点</div>
                     <div class="rank">RANK<br>{{rank}}</div>
                 </div>
             </div>
@@ -36,8 +36,9 @@
             <div class="form_conf">
                 
             
-                <div class="alert alert-light" role="alert" id="teacher_info">
-                    {{bloadcast_video}}
+                <div id="teacher_info">
+                    ポーズ名<br>
+                    {{pose}}
                 </div>
                 <div>
                     <form action="/menu" method="POST">
